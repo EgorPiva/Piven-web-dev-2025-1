@@ -8,12 +8,12 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
-    background-color: #130f0f;
+    background-color: #483939;
 }
 
 header {
     background-color: black;
-    color: rgb(110, 36, 36);
+    color: rgb(255, 255, 255);
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -57,7 +57,7 @@ h2 {
     text-align: center;
     font-size: 42px;
     font-weight: bold;
-    color: rgb(110, 36, 36);
+    color: rgb(170, 49, 49);
     margin-bottom: 15px;
 }
 
@@ -96,7 +96,7 @@ td {
 }
 
 th {
-    background-color: #454344;
+    background-color: #777375;
     font-weight: bold;
 }
 

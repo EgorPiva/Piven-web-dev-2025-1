@@ -1,0 +1,106 @@
+/* Стили для страницы Собрать ланч */
+
+/* Блок со всеми блюдами - CSS Grid */
+.dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+/* Блок каждого блюда - Flexbox */
+.dish-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: white;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    transition: all 0.3s ease;
+}
+
+/* Hover эффекты для карточки блюда */
+.dish-card:hover {
+    border: 2px solid tomato;
+}
+
+.dish-card:hover button {
+    background-color: tomato;
+    color: white;
+}
+
+/* Изображение блюда */
+.dish-card img {
+    width: 100%;
+    border-radius: 35px;
+    margin-bottom: 15px;
+}
+
+/* Цена */
+.dish-card .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Название блюда */
+.dish-card .name {
+    font-size: 20px;
+    margin-bottom: 8px;
+    flex-grow: 1;
+}
+
+/* Вес/объем */
+.dish-card .weight {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Кнопка Добавить */
+.dish-card button {
+    background-color: #f1eee9;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+/* Адаптивность для планшетов (≤800px) */
+@media (max-width: 800px) {
+    .dishes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+}
+
+/* Адаптивность для мобильных (≤600px) */
+@media (max-width: 600px) {
+    .dishes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        font-size: 20px;
+    }
+    
+    .dishes-section h2 {
+        text-align: center;
+    }
+}
