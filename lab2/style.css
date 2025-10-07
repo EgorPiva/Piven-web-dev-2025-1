@@ -1,3 +1,7 @@
+body {
+    color: #c72f2f;
+}
+
 .dishes-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -8,12 +12,12 @@
 .dish-card {
     display: flex;
     flex-direction: column;
-    padding: 30px 40px;
+    padding: 40px 30px;
     border-radius: 15px;
     cursor: pointer;
     background-color: white;
     filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .dish-card:hover {
